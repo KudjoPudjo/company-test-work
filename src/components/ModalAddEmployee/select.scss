@@ -1,0 +1,35 @@
+.select{
+  &_title{
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &_wrap{
+    overflow: hidden;  /* NEW */
+    min-width: 0;      /* NEW; needed for Firefox */
+  }
+  .Dropdown-menu{
+    border: 1px solid black !important;
+    margin-top: 4px;
+    border-radius: 4px;
+  }
+  .Dropdown-option{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 4px 12px;
+    cursor: pointer;
+  }
+  &_control{
+    border-radius: 8px;
+    border: 1px solid black;
+    height: 40px;
+    padding: 4px 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+    & > div{
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}

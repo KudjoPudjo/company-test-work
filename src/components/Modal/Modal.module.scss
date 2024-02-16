@@ -1,0 +1,41 @@
+.black{
+  position: absolute;
+  opacity: .8;
+  height: 100%;
+  background: black;
+  cursor: pointer;
+  z-index: 998;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.wrap{
+  position: absolute;
+  z-index: 997;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+.modal{
+  position: relative;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 999;
+  width: 90%;
+  @media (min-width: 1400px) {
+   width: 50%;
+  }
+  margin: 250px auto;
+}
+.cross{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 25px;
+  height: 25px;
+  background: center/cover no-repeat url("../../assets/icons/cross.svg");
+  cursor: pointer;
+}

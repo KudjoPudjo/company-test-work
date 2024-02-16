@@ -1,0 +1,43 @@
+.table{
+
+  &_title{
+    font-weight: 600;
+
+    margin: 0px;
+    font-size: 20px;
+    @media (min-width: 1400px) {
+      font-size: 36px;
+    }
+  }
+  &_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    @media (min-width: 710px) {
+      flex-direction: row;
+      align-items: center;
+    }
+    &_wrap{
+      display: flex;
+      flex-direction: column;
+      row-gap: 4px;
+    }
+  }
+  &_titles{
+    display: grid;
+    grid-template-columns: repeat(4,1fr) 24px;
+    grid-column-gap: 6px;
+    border: 1px solid black;
+    margin-top: 50px;
+    &_text{
+      font-size: 14px;
+      @media (min-width: 1400px) {
+        font-size: 20px;
+      }
+    }
+  }
+  &_body{
+
+  }
+}

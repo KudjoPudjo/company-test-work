@@ -1,0 +1,29 @@
+.item{
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr) 24px;
+  grid-column-gap: 6px;
+  padding: 12px 4px;
+  &_text{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+}
+.edit{
+  background: center/cover no-repeat url("../../../../assets/icons/edit.svg");
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.delete{
+  background: center/cover no-repeat url("../../../../assets/icons/trashbag.svg");
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+.selected{
+  background: rgba(138,79,161,0.42);
+  border-radius: 8px;
+}
